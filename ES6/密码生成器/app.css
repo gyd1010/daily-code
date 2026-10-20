@@ -1,0 +1,136 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9ddbf0;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* 主卡片 */
+#app {
+  width: 262px;
+  padding: 18px;
+  background: #edf8f4;
+  border-radius: 10px;
+}
+
+/* 密码输入框和复制图标 */
+.generate-pass {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  margin-bottom: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.generate-pass input[type="text"] {
+  flex: 1;
+  min-width: 0;
+  width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.copy svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: #aaa;
+}
+
+.copy:hover svg {
+  fill: #555;
+}
+
+/* 复选框区域 */
+.inputs label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0;
+  padding-left: 26px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.inputs label input[type="checkbox"] {
+  margin: 0;
+  accent-color: #5aa58d;
+}
+
+/* 密码长度 */
+.input-group {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.slider {
+  flex: 1;
+  min-width: 0;
+  height: 5px;
+  accent-color: #1684ff;
+  cursor: pointer;
+}
+
+.value {
+  width: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* 生成按钮 */
+button[data-js-selector="button"] {
+  display: block;
+  width: 100%;
+  height: 32px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #59a48b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[data-js-selector="button"]:hover {
+  background: #478e77;
+}
+
+button[data-js-selector="button"]:active {
+  transform: scale(0.98);
+}

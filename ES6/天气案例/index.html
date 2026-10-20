@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="app">
+  <div id="loading"></div>
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button>
+        <svg stroke="currentColor" fill="currentColor" viewBox="0 0 16 16" height="1em" width="1.5em">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 10-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 001.415-1.414l-3.85-3.85a1.007 1.007 0 00-.115-.1zM12 6.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div class="weather loading">
+      <h2 class="comment">注意：请输入城市拼音首字母大写</h2>
+      <h2 class="city">Weather in Shanghai</h2>
+      <h1 class="temp">21°C</h1>
+      <div class="flex">
+        <img src="https://openweathermap.org/img/wn/10d.png" alt="" class="icon">
+        <div class="description">多云</div>
+      </div>
+      <div class="other">
+        <div class="humidity">湿度: 60%</div>
+        <div class="wind">风速: 6.2 km/h</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vanilla-tilt.js"></script>
+  <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>

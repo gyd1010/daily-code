@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1400px;
+    margin: auto;
+}
+
+.head {
+    height: 120px;
+}
+
+.logo {
+    float: left;
+}
+
+.title {
+    float: left;
+    height: 100px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.tupian img {
+    width: 100px;
+}
+
+.tupian span {
+    display: inline-block;
+    margin-left: 65px;
+    font-size: 14px;
+}
+
+.search {
+    float: right;
+    margin-top: 35px;
+    margin-right: 40px;
+    width: 380px;
+    height: 50px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+}
+
+.search input {
+    width: 240px;
+    height: 46px;
+    outline: none;
+    border: 0;
+    margin-left: 10px;
+}
+
+.bt1,
+.bt2 {
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.bt1 {
+    background-color: rgb(255, 235, 239);
+}
+
+.bt2 {
+    background: red;
+    color: white;
+}
+
+
+.nav {
+    float: left;
+    width: 250px;
+}
+
+.nav ul {
+    background-color: #f5f5f5;
+    list-style: none;
+}
+
+.nav ul li {
+    width: 250px;
+    height: 55px;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.nav ul li a {
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav ul li:hover a {
+    background-color: #fe6700;
+    color: white;
+}
+
+.nav ul li a span {
+    float: right;
+    margin-right: 15px;
+}
+
+.box {
+    float: left;
+    margin-left: 20px;
+    width: 1130px;
+}
+
+.box ul li {
+    float: left;
+    list-style: none;
+    height: 375px;
+    width: 260px;
+    background-color: #f5f5f5;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.box ul li img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+}
+
+.price {
+    margin-top: 5px;
+}
+
+.price h2 {
+    display: inline-block;
+    color: red;
+    margin-left: 20px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.range h5 {
+    font-weight: 400;
+    color: #F9DD8c;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.goods-title {
+    width: 260px;
+    height: 48px;
+    line-height: 24px;
+    font-size: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    text-indent: 1em;
+}
+
+.box ul li:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}

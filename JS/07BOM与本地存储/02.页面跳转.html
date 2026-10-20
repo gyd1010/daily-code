@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="https://www.baidu.com" target="_blank">5秒后跳转</a>
+  <script>
+    let i = 5
+    a = document.querySelector('a')
+    let timer = setInterval(function () {
+      i--
+      a.innerHTML = `${i}秒后跳转`
+      if (i === 0) {
+        clearInterval(timer)
+        location.href = 'https://www.baidu.com'
+      }
+    }, 1000)
+  </script>
+</body>
+
+</html>

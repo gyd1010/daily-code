@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    height: 70px;
+    background: #9ec5d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.logo {
+
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a:nth-child(1) {
+    transform: translate(-10px, -10px) rotate(90deg);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
+.banner {
+    height: 300px;
+    background: linear-gradient(120deg, #8ec5fc, #e0c3fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: show 1.5s;
+}
+
+
+.banner button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.banner button:hover {
+    transform: scale(1.1);
+
+}
+
+.content {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+}
+
+article {
+    flex: 3;
+}
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    background: #eee;
+    border-radius: 15px;
+    transition: .5s;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+aside {
+    flex: 1;
+    background: #b5d3df;
+    padding: 20px;
+}
+
+footer {
+    background: #9ec5d3;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-box {
+    width: 350px;
+    margin: 150px auto;
+    padding: 40px;
+    box-shadow: 0 0 20px #aaa;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: show 1s;
+
+}
+
+.login-box input {
+    height: 40px;
+}
+
+.login-box button {
+    height: 40px;
+    background: #5c9ded;
+    color: white;
+    border: 0;
+
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:700px) {
+
+    .content,
+    .cards {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+}

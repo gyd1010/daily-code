@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    {
+      let name = "s"
+      let vue = {
+        name,
+        data() {
+          console.log("nihao")
+        }
+      }
+      console.log(vue)
+      vue.data()
+    }
+    {
+      let obj = {}
+      let arr = ["zhangsan", "lisi", "wangwu"]
+      for (let i = 0; i < arr.length; i++) {
+        obj[arr[i] + (i + 1)] = arr[i]
+      }
+      console.log(obj)
+      for (let i = 0; i < arr.length; i++) {
+        console.log(obj[arr[i] + (i + 1)])
+      }
+    }
+  </script>
+</body>
+
+</html>

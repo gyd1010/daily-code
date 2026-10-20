@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?2f68qp');
+  src: url('fonts/icomoon.eot?2f68qp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2f68qp') format('truetype'),
+    url('fonts/icomoon.woff?2f68qp') format('woff'),
+    url('fonts/icomoon.svg?2f68qp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.todo {
+  width: 550px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 200;
+  color: #eadada;
+}
+
+.box {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+.input-box {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.arrow {
+  width: 70px;
+  text-align: center;
+  font-size: 35px;
+  color: #ddd;
+  cursor: pointer;
+  font-family: 'icomoon';
+}
+
+.arrow.all-completed {
+  color: #737373;
+}
+
+.input-box input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  font-style: italic;
+  color: #555;
+}
+
+.input-box input::placeholder {
+  color: #ddd;
+}
+
+.todo-item {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.toggle {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  left: 14px;
+}
+
+.check-icon {
+  display: none;
+  font-family: 'icomoon';
+  color: #5dc2af;
+  font-size: 24px;
+  margin-left: -26px;
+  pointer-events: none;
+  transform: translate(10px, -1px);
+}
+
+.toggle:checked {
+  border-color: #5dc2af;
+}
+
+.toggle:checked+.check-icon {
+  display: block;
+}
+
+.text {
+  margin-left: 20px;
+  font-size: 26px;
+}
+
+.footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  color: #777;
+}
+
+.filter {
+  display: flex;
+  gap: 25px;
+}
+
+.filter span {
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.filter span.active {
+  border: 1px solid #efd5d5;
+  border-radius: 4px;
+}
+
+.author {
+  margin-top: 100px;
+  text-align: center;
+  line-height: 30px;
+  color: #bbb;
+}
+
+.todo-item.completed .text {
+  text-decoration: line-through;
+  color: #aaa
+}
+
+.delete {
+  font-family: 'icomoon';
+  display: none;
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delete::before {
+  content: "\ea0f";
+  color: rgba(175,
+      91,
+      94);
+}
+
+.todo-item:hover .delete {
+  display: block;
+}

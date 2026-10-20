@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    ////闭包
+    function outer() {
+      let num = 10
+      console.log(num)
+      function inner() {
+        console.log(num)
+      }
+      return inner
+    }
+    const fn = outer()
+    fn()
+    /////回调
+    function show() {
+      console.log("nihao")
+    }
+    function test(callback) {
+      console.log('hello')
+      callback()
+    }
+    test(show)
+  </script>
+</body>
+
+</html>
