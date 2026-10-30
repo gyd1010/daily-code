@@ -142,5 +142,6 @@ filters[3].addEventListener('click', function () {
   filter = 'clear'
   render()
 })
-
+const btn = document.querySelector('.btn')
+fetch('https://v1.jinrishici.com/all.json').then(res => res.json()).then(data => { btn.innerHTML = data.content })
 render()

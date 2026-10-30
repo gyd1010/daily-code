@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Person {
+      constructor(name = 'zhangsan', age = 12) {
+        this.name = name
+        this.age = age
+      }
+      shahi() {
+        console.log('shahi')
+      }
+    }
+    let person = new Person()
+    console.log(person.name, person.age)
+    person.shahi()
+    class Talk extends Person {
+      nihao() {
+        console.log('nihao')
+      }
+    }
+    let talk = new Talk()
+    talk.nihao()
+    talk.shahi()
+    console.log(talk.name)
+  </script>
+</body>
+
+</html>

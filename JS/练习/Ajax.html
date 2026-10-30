@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    async function getData() {
+      try {
+        const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        if (!res.ok) {
+          throw new Error('error')
+        }
+        const data = await res.json()
+        console.log(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getData()
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(res1 => res1.json())
+      .then(data1 => {
+        console.log(data1)
+      })
+
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1')
+    xhr.onload = function () {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        console.log(xhr.responseText)
+      }
+    }
+    xhr.send()
+  </script>
+</body>
+
+</html>

@@ -11,18 +11,21 @@
   <script>
     ////闭包
     function outer() {
-      let num = 10
+      let num = 0;
       console.log(num)
       function inner() {
+        num++
         console.log(num)
       }
-      return inner
+      return inner;
     }
     const fn = outer()
     fn()
+    fn()
+    fn()
     /////回调
     function show() {
-      console.log("nihao")
+      console.log('nihao')
     }
     function test(callback) {
       console.log('hello')
